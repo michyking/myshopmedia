@@ -7,61 +7,6 @@
   --headingFont: "Poppins", sans-serif;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--bodyFont);
-}
-
-/* top bar ============ */
-
-.top-bar {
-  width: 100%;
-  height: 2rem;
-  background-color: var(--topBar);
-  margin-bottom: 20px;
-  display: flex;
-  padding: 0 20px;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.top-bar p i {
-  margin-right: 1rem;
-  color: var(--secondaryColor);
-}
-
-/* Ad Link ====== */
-
-.ad-link {
-  width: 90%;
-  color: var(--secondaryColor);
-  margin-bottom: 20px;
-}
-
-.ad-link i {
-  margin-right: 1rem;
-  font-size: 1rem;
-}
-
-.ad-link a {
-  text-decoration: none;
-  font-size: 0.7rem;
-  color: var(--additionalColor);
-}
-
-.ad-link a:hover {
-  border-bottom: 1px solid var(--secondaryColor);
-}
-
 /* The Nav Bar======== */
 
 header {
@@ -72,7 +17,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 70px;
+  padding: 50px;
   margin-bottom: 30px;
   border-radius: 6px;
 }
@@ -192,11 +137,6 @@ nav{
   display: block;
 }
 
-/* .dropdown:hover .dropbtn {
-    background-color: var(--topBar);
-    color: var(--additionalColor);
-} */
-
 .cart{
     display: flex;
     align-items: center;
@@ -204,6 +144,7 @@ nav{
     background-color: var(--topBar);
     padding: 10px 14px;
     border-radius: 5px;
+    cursor: pointer;
 }
  
 .cart i{
@@ -251,12 +192,13 @@ nav{
     nav{
         position: fixed;
         right: -100%;
-        top:  155px;
+        top:  100px;
         gap: 0;
         flex-direction: column;
         background-color: var(--primaryColor);
         width: 60%;
         height: 50vh;
+        justify-content: space-evenly;
         text-align: center;
         transition: 0.3s;
         padding: 20px 0;
@@ -270,4 +212,14 @@ nav{
     .search .dropdown .cart{
         margin-bottom: 10px;
     }
+}
+
+@media(max-width: 420px){
+  header{
+    padding: 50px 20px;
+  }
+
+  .logo a h1 {
+    font-size: 1.8rem;
+  }
 }
