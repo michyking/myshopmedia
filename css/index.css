@@ -1,0 +1,23 @@
+:root {
+    --secondaryColor: rgba(170, 61, 38);
+    --primaryColor: rgb(223, 167, 55);
+    --additionalColor: #333;
+    --topBar: #eee;
+    --bodyFont: "Roboto", sans-serif;
+    --headingFont: "Poppins", sans-serif;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--bodyFont);
+  }
