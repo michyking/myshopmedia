@@ -1,0 +1,15 @@
+/*.my-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.my-list li {
+  display: flex;
+  align-items: left;
+}*/
+
+#hero {
+  display: flex;
+  align-items: left;
+}
